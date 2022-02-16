@@ -1,0 +1,57 @@
+https://getcomposer.org/download/ descargar laravel 
+tienes que irte al terminal de git bash y poner la ruta en xampp buenas hacer lo en apache docs 
+
+
+composer global require laravel/installer // este es el comando para instalar laravel 
+laravel new blog // crear proyecto de nombre blog   
+
+Laravel Snippets// extension en visual code
+
+php artisan make:controller Home -r// instalar controller "-r" siempre le pones para que te crea automanticamente show,destroy,update, index, create,store 	
+php artisan migrate // migrar a la base de datos esto es cuando ya tienes  tus tablas 
+
+ php artisan make:migration create_"nombretable"_table // para crear tablas en laravel los php y debes configurar las tablas poner las 
+
+php artisan migrate // pero tambien puedes volver a ejecutarlo y solo te creará esas tablas nuevas
+php artisan migrate:refresh // te refresca la base de datos y pone las nuevamente las  tablas 
+para cuando pones nuevos campos, elimina todo el contenido  solo ejecuta cuando estes comenzando
+
+php artisan migrate:rollback// revierte la ultima o migracion tabla creada o operación que se haga en mysql	
+
+ php artisan make:migration add_"nombrecolumna"_to_"table"_table// esto agrega una columna
+
+composer require doctrine/dbal // ejecutar el comando para poder cambiar valores en las columnas 
+
+
+php artisan make:model Cliente // esto crea el archivo los modelos siempre pon en singular no plurar como en la base de datos
+
+php artisan tinker//  es solo para interactuar con la base de datos hace el papel de front-end es todo comando
+para salir (exit) 
+
+php artisan migrate:reset // borra todas las migraciones de mi base y elimina todo
+
+php artisan make:component Alert// compenetes en laravel
+
+
+
+php artisan db:seed// esto es para poder ejecutar el seeders por comando 
+
+ php artisan make:seeder ClienteSeeder//  te ayuda a no poner el mismo codigo repetido 
+
+
+php artisan migrate:refresh --seed// 2 metodos unidos refresca y luego ejecuta el seeders donde tienes tus datos para ingresar	
+
+
+php artisan breeze:install // revisa en google
+
+php artisan storage:link//  te ayuda abrir un archivo
+
+composer require barryvdh/laravel-dompdf// descarga el paquete
+
+php artisan make:request Nombre // esto es la validaciones
+
+php artisan make:migration create_files_table// para no borrar otra vez
+
+php artisan make:mail EmergencyCallReceived // esto crea Un enlace
+
+https://www.youtube.com/watch?v=2pppMAtIlro&list=PLZ2ovOgdI-kWWS9aq8mfUDkJRfYib-SvF&index=8 // migration para que no esta refrescando a cadad rato la tabla
